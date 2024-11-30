@@ -20,10 +20,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         // Configuração das credenciais diretamente no código
-        AwsBasicCredentials awsCredentials = AwsBasicCredentials.create(
-                "AKIAUNKCFIQ7OXYPQSKV",  // Sua Access Key ID
-                "osrBaY8HEQRApDZOfcBDN8IGnddWOdQDi3yGsE9j" // Sua Secret Access Key
-        );
+
 
         // Criando o cliente SQS com as credenciais e região
         SqsClient sqsClient = SqsClient.builder()
